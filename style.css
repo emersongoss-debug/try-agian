@@ -149,7 +149,9 @@ margin: 0 auto;
     align-items: center;
 }
 
-
+.no-cursor{
+    cursor: not-allowed
+}
 /*
 
 highlights 
@@ -294,4 +296,24 @@ EXPLORE
 
 #explore {
     background-color:rgba(115, 66, 214, 0.1);
+}
+
+/*
+
+Footer
+
+*/
+
+footer {
+    background-color: #242424;
+}
+
+.footer__logo--img {
+    width: 160px;
+    filter: grayscale(1)invert(1);
+}
+
+.footer__link,
+.footer__copyright {
+    color: #fff
 }
