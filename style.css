@@ -317,3 +317,7 @@ footer {
 .footer__copyright {
     color: #fff
 }
+
+.footer__list {
+    margin: 24px;
+}
