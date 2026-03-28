@@ -6,7 +6,7 @@
 <title>Library</title>
 <link rel="stylesheet" href="./style.css">
 <script src="https://kit.fontawesome.com/1da8dd0a2b.js" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="assets/index.js"></script>
 </head>
 
 <body>
@@ -19,26 +19,27 @@
         <li><a href="a" class="nav__link">Contact</a></li>
         <li><a href="a" class="nav__link nav__link--primary">Books</a></li>
       </ul>
-     </div>
-     <button class="btn__menu">
+     
+     <button class="btn__menu" onclick="openMenu()">
       <i class="fa-solid fa-bars"></i>
      </button>
      <div class="menu__backdrop">
-      <button class="btn__menu btn__menu--close">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
         <i class="fas fa-times"></i>
       </button>
       <ul class="menu__links">
         <li class="menu__list">
-          <a href="#" class="menu__link">Home</a>
+          <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
       </li>
         <li class="menu__list">
-          <a href="#features" class="menu__link">Books</a>
+          <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
       </li>
         <li class="menu__list">
-          <a class="menu__link no-cursor">Contact</a>
+          <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
       </li>
         
       </ul>
+     </div>
      </div>
     </nav>
     <header>
@@ -46,7 +47,9 @@
         <div class="header__description">
             <h1>The United States most awarded online library platform</h1>
             <h2>Find your dream book with <span class="purple">Library</span></h2>
-            <button class="btn">Browse books</button>
+            <a href="#features">
+                <button class="btn">Browse books</button>
+            </a>
         </div>
         <figure class="header__img--wrapper">
           <img src="assets/Undraw_Books.svg" alt=" books">
